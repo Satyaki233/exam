@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 const Paper = () => {
     
@@ -27,12 +27,12 @@ const Paper = () => {
         if(load){
             return(
                 <div className='container'>
-                    <Link to='/'>
+                    {/* <Link to='/'>
                         <button className='btn btn-primary'>
                         Go back
                         </button>
                     
-                    </Link>
+                    </Link> */}
 
                     <div className='alert alert-success'>
 The Questions that you submit is

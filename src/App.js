@@ -15,18 +15,21 @@ function App() {
   return (
     <div className="App">
      
-     <BrowserRouter>
+     {/* <BrowserRouter>
       <Switch>
-        <Route path='/' exact component={Home}/>
+        <Route path='/Home' exact component={Home}/>
         <Route path='/about' exact component={About}/>
         <Route path='/upload' exact component={Upload}/>
         <Route path='/GiveTest' exact component={GiveTest}/>
-        <Route path='/MakeTest' exact component={MakeTest}/>
+        <Route path='/' exact component={MakeTest}/>
         <Route path='/Test' exact component={Test}/>
         <Route path='/Paper' exact component={Paper}/>
       </Switch> 
      
-     </BrowserRouter>
+     </BrowserRouter> */}
+            <MakeTest/>
+            <Paper/>
+        
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import { Redirect } from 'react-router-dom'
+
 
 const MakeTest = () => {
 
@@ -52,7 +52,7 @@ const MakeTest = () => {
      }
 
     console.log(state)
-    if(!load){
+    {
       return (
         <div>
             <h1>Make a Question paper</h1>
@@ -105,9 +105,6 @@ const MakeTest = () => {
            
             </div>
       )
-    }else{
-      return <Redirect to='/Paper'/>
-        
     }   
 
            
