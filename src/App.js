@@ -17,11 +17,11 @@ function App() {
      
      <BrowserRouter>
       <Switch>
-        <Route path='/Home' exact component={Home}/>
+        <Route path='/' exact component={Home}/>
         <Route path='/about' exact component={About}/>
         <Route path='/upload' exact component={Upload}/>
         <Route path='/GiveTest' exact component={GiveTest}/>
-        <Route path='/' exact component={MakeTest}/>
+        <Route path='/MakeTest' exact component={MakeTest}/>
         <Route path='/Test' exact component={Test}/>
         <Route path='/Paper' exact component={Paper}/>
       </Switch> 
