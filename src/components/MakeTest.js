@@ -21,7 +21,7 @@ const MakeTest = () => {
         data.append('sheet',state.sheet)
         localStorage.setItem('name',state.name)
         // console.log(data)
-        fetch(`http://localhost:3001/try`,{
+        fetch(`https://blueberry-crumble-01022.herokuapp.com/try`,{
             method: 'POST',     
          body:data     
         })
@@ -55,7 +55,12 @@ const MakeTest = () => {
     if(!load){
       return (
         <div>
-            MakeTest
+            <h1>Make a Question paper</h1>
+            <div className='container alert alert-success'>
+               Please Enter a Excel file in the Input : ex-- Book1.xlsx<br/>
+               Please Enter a Chapter name as you like..<br/>
+               please Enter the Sheet number og your excel file..
+            </div>
           <div className='card mx-auto' style={{width:'70vw',padding:'10px'}}>
           <form className='container' >
                 <div className='form-group'>

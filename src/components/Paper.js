@@ -7,7 +7,7 @@ const Paper = () => {
     const [load,setLoad]=useState(false)
     console.log(localStorage.getItem('name'))
     useEffect(() => {
-        fetch(`http://localhost:3001`,{
+        fetch(`https://blueberry-crumble-01022.herokuapp.com/ok`,{
             method: 'POST',
             headers:{'Content-Type':'application/json'} ,        
             body: JSON.stringify({ name:localStorage.getItem('name') })
@@ -57,12 +57,12 @@ The Questions that you submit is
             <tbody>
     <tr>
                 <th scope="row">{items.id}</th>
-                <td>{items.Question}</td>
-                <td>{items.A}</td>
-                <td>{items.B}</td>
-                <td>{items.C}</td>
-                <td>{items.D}</td>
-                <td>{items.Right}</td>
+                <td>{items.question}</td>
+                <td>{items.a}</td>
+                <td>{items.b}</td>
+                <td>{items.c}</td>
+                <td>{items.d}</td>
+                <td>{items.r}</td>
            </tr>
            </tbody>
             )
